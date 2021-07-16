@@ -1,74 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/92dc8e2ed3.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>About</title>
+</head>
+<body>
+   
+    <section class="profile">
+    <div class="img-profile"><img class="img" src="assets/img/logo.png"></div>
+    <div class="user-name"><h3>CodEv</h3></div>
+    
+    
+    <div class="bio"><img class="wave" src="assets/img/wave.png">
+     CodEv is a series in which you will learn basics of coding 
+    </div>
+    <a href="https://instagram.com/dev.stew" class="instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-        <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>getsetcode</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">.getsetcode</a>
-                </div>
-                
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
+</section>
 
-                <div class="nav__menu" id="nav-menu">
-                    <div class="nav__close" id="nav-close">
-                        <i class='bx bx-x'></i>
-                    </div>
+</body>
 
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="insta.html" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="codev.html" class="nav__link">codev</a></li>
 
-                    </ul>
-                </div>
-            </nav>
-        </header>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home" id="home">
-                <div class="home__container bd-grid">
-                    <div class="home__img">
-                        <img src="assets/img/img1.png" alt="" data-speed="-2" class="move">
-                        <img src="assets/img/img2.png" alt="" data-speed="2" class="move">
-                        <img src="assets/img/img3.png" alt="" data-speed="2" class="move">
-                        <img src="assets/img/img4.png" alt="" data-speed="-2" class="move">
-                        <img src="assets/img/img5.png" alt="" data-speed="-2" class="move">
-                        <img src="assets/img/img6.png" alt="" data-speed="2" class="move">
-                    </div>
+.profile{
+  font-family: 'Poppins',sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  font-size: 20px;
+  background-color: #8979F8;
+  color: white;
+}
+body{
+  background-color: #8979F8;
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+}
+button{
+  background-color: #6855FA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding-left: 7px;
+  padding-top: 5px;
+  padding-right: 7px;
+  padding-bottom: 5px;
+}
+.img{
+  height: 80px;
+  border-radius: 400px;
+}
+.instagram{
+  color: white;
+}
+.l-header{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--first-color);
+}
 
-                    <div class="home__data">
-                        <h1 class="home__title">Start your<br> Journey</h1>
-                        <p class="home__description">Let us help you in starting your  <br> journey to code</p>
-                        <a href="pricing.html" class="home__button">Get course</a>
+.wave{
+  height: 60px;
+  width: 60px;
+}
+</style>
 
-                        
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!--===== GSAP =====-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
 </html>
-
-
